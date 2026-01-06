@@ -12,7 +12,7 @@ jobs:
   coverage:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       # CINTENT >> INSERT_CINTENT
       - uses: JavidDitty/setup-cintent@a606c80c34ec190c6a20dea33d6d58ddb6c4e0cc
@@ -20,7 +20,7 @@ jobs:
       - name: Set up Python 3.8
         uses: actions/setup-python@v4
         with:
-          python-version: 3.8
+          python-version: "3.10"
 
       - name: Install dependencies
         run: |
